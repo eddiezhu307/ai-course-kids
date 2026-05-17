@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 小创客 | 9-16 岁 AI 科普与创作课程</title>
+  <meta name="description" content="面向 9-16 岁青少年的 AI 科普与创作课程网站，包含 16 课课程地图、提示词训练器、案例实验室、安全小测和作品包清单。">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header">
+    <nav class="topbar" aria-label="主导航">
+      <a class="brand" href="#home" aria-label="AI 小创客首页">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span>
+          <strong>AI 小创客</strong>
+          <small>生活场景里的人工智能课</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span aria-hidden="true">☰</span>
+        <span class="sr-only">打开导航</span>
+      </button>
+      <div class="site-nav" id="siteNav">
+        <a href="#scenes">场景插图</a>
+        <a href="#map">课程地图</a>
+        <a href="#prompt">提示词训练</a>
+        <a href="#cases">案例实验室</a>
+        <a href="#safety">安全小测</a>
+        <a href="#project">作品包</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero-band" id="home">
+      <div class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span>9-16 岁青少年 AI 素养学习系统</p>
+          <h1>把 AI 放进孩子真实生活里学</h1>
+          <p class="hero-lead">从作业卡住、英语不敢说、作文没灵感，到校园海报、定制歌曲和项目路演。孩子在 16 个任务里学会提问、判断、创作与负责。</p>
+          <div class="hero-actions" aria-label="快速入口">
+            <a class="btn primary" href="#map">开始看 16 课</a>
+            <a class="btn ghost" href="#prompt">练一次提示词</a>
+          </div>
+          <div class="hero-stats" aria-label="课程关键数据">
+            <div><strong>16</strong><span>节完整课程</span></div>
+            <div><strong>4</strong><span>大能力模块</span></div>
+            <div><strong>90</strong><span>分钟推荐课时</span></div>
+            <div><strong>1</strong><span>套作品包</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="课程视觉">
+          <img src="assets/scene-project-photo.jpg" alt="虚构学生在校园里展示 AI 创意项目的真实感照片">
+        </div>
+      </div>
+
+      <div class="quick-board" aria-label="今日可以体验的互动任务">
+        <article>
+          <span class="mini-label">今日挑战 01</span>
+          <h2>把“我不会”改成一个好问题</h2>
+          <p>用提示词训练器，把模糊问题变成 AI 能真正帮上忙的任务。</p>
+          <a href="#prompt">去训练</a>
+        </article>
+        <article>
+          <span class="mini-label">今日挑战 02</span>
+          <h2>判断 AI 回答能不能信</h2>
+          <p>完成 5 道安全小测，理解隐私、幻觉、版权和作业诚信。</p>
+          <a href="#safety">去判断</a>
+        </article>
+        <article>
+          <span class="mini-label">今日挑战 03</span>
+          <h2>点亮自己的课程进度</h2>
+          <p>打开课程卡片，标记已完成课程，形成学习路线。</p>
+          <a href="#map">去点亮</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section intro-section" aria-labelledby="coursePosition">
+      <div class="section-inner two-column">
+        <div>
+          <p class="section-kicker">课程定位</p>
+          <h2 id="coursePosition">不是教孩子偷懒，而是教孩子会用工具</h2>
+          <p class="section-lead">AI 不是万能答案机。这个网站把课程设计成一个学习系统：孩子先遇到真实问题，再学习如何向 AI 提问、如何检查结果、如何修改作品，最后说清楚“我做了什么，AI 帮了什么”。</p>
+        </div>
+        <div class="principle-grid" aria-label="四项核心能力">
+          <article>
+            <strong>会提问</strong>
+            <span>角色、任务、背景、格式、标准</span>
+          </article>
+          <article>
+            <strong>会判断</strong>
+            <span>核查来源，识别 AI 幻觉</span>
+          </article>
+          <article>
+            <strong>会创作</strong>
+            <span>写作、演讲、海报、歌曲、分镜</span>
+          </article>
+          <article>
+            <strong>会负责</strong>
+            <span>隐私、版权、署名、作业诚信</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section planner-section" aria-labelledby="plannerTitle">
+      <div class="section-inner planner-grid">
+        <div>
+          <p class="section-kicker">学习路线</p>
+          <h2 id="plannerTitle">先选年龄和目标，生成课堂侧重</h2>
+          <p class="section-lead">同一套 16 课可以服务不同年龄段。9-12 岁更适合故事化和模板化，13-16 岁可以加入事实核查、数据分析和项目路演。</p>
+        </div>
+        <div class="planner-tool tool-panel">
+          <div class="field-row">
+            <label for="ageSelect">学生年龄段</label>
+            <select id="ageSelect">
+              <option value="junior">9-12 岁：体验、规则、动手作品</option>
+              <option value="senior">13-16 岁：方法、判断、项目表达</option>
+            </select>
+          </div>
+          <div class="field-row">
+            <span class="field-label">当前最想提升</span>
+            <div class="goal-chips" id="goalChips" role="group" aria-label="学习目标">
+              <button type="button" class="chip is-active" data-goal="study">学习效率</button>
+              <button type="button" class="chip" data-goal="expression">表达自信</button>
+              <button type="button" class="chip" data-goal="creative">创作作品</button>
+              <button type="button" class="chip" data-goal="project">项目路演</button>
+            </div>
+          </div>
+          <div class="route-output" id="routeOutput" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="scenes" aria-labelledby="scenesTitle">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">场景插图</p>
+            <h2 id="scenesTitle">孩子每天都会遇到的 AI 使用场景</h2>
+            <p class="section-lead">这些插图对应课程里的真实任务，可以作为课堂导入、公众号配图或招生页视觉。每张图都避开真实儿童照片和学校隐私，适合直接放在课程内容里。</p>
+          </div>
+        </div>
+
+        <div class="visual-story-grid" aria-label="AI 课程真实场景插图">
+          <article>
+            <img src="assets/scene-homework-photo.jpg" alt="虚构学生用 AI 引导自己理解作业步骤的真实感照片">
+            <h3>作业卡住</h3>
+            <p>不问“答案是什么”，而是请 AI 一步步提问、提示下一步。</p>
+          </article>
+          <article>
+            <img src="assets/scene-english-photo.jpg" alt="虚构学生和 AI 进行英语口语练习的真实感照片">
+            <h3>英语陪练</h3>
+            <p>让 AI 扮演校园访客，孩子一轮一轮开口表达。</p>
+          </article>
+          <article>
+            <img src="assets/scene-creative-photo.jpg" alt="虚构学生进行校园海报和歌曲创作的真实感照片">
+            <h3>海报与歌曲</h3>
+            <p>把校园活动变成海报、歌词、音乐风格和封面概念。</p>
+          </article>
+          <article>
+            <img src="assets/scene-safety-photo.jpg" alt="虚构学生核查 AI 回答和隐私安全的真实感照片">
+            <h3>安全判断</h3>
+            <p>学会识别 AI 幻觉、隐私风险、版权和作业诚信边界。</p>
+          </article>
+          <article>
+            <img src="assets/scene-project-photo.jpg" alt="虚构学生进行校园 AI 创意项目路演的真实感照片">
+            <h3>项目路演</h3>
+            <p>把真实校园问题做成方案、图表、展板和 3 分钟展示。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section map-section" id="map" aria-labelledby="mapTitle">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">课程地图</p>
+            <h2 id="mapTitle">16 节课，像任务地图一样逐步点亮</h2>
+            <p class="section-lead">每张课程卡都包含真实场景、AI 科普点、课堂活动、学生作品和推荐提示词。点开卡片可以查看完整详情，也可以标记完成。</p>
+          </div>
+          <div class="progress-widget" aria-label="课程完成进度">
+            <strong id="progressNumber">0/16</strong>
+            <span>已点亮课程</span>
+            <div class="progress-track"><span id="progressBar"></span></div>
+          </div>
+        </div>
+
+        <div class="map-controls">
+          <div class="filter-group" role="group" aria-label="课程模块筛选">
+            <button class="filter-btn is-active" type="button" data-filter="all">全部</button>
+            <button class="filter-btn" type="button" data-filter="A">学习伙伴</button>
+            <button class="filter-btn" type="button" data-filter="B">表达判断</button>
+            <button class="filter-btn" type="button" data-filter="C">多媒体创作</button>
+            <button class="filter-btn" type="button" data-filter="D">项目展示</button>
+          </div>
+          <label class="search-box">
+            <span class="sr-only">搜索课程</span>
+            <input id="lessonSearch" type="search" placeholder="搜索：英语、海报、歌曲、作业……">
+          </label>
+        </div>
+
+        <div class="lesson-grid" id="lessonGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section prompt-section" id="prompt" aria-labelledby="promptTitle">
+      <div class="section-inner prompt-grid">
+        <div>
+          <p class="section-kicker">互动训练器</p>
+          <h2 id="promptTitle">把一句模糊问题，变成一条好提示词</h2>
+          <p class="section-lead">孩子最常说“我不会”“帮我写一下”。这里把它拆成 5 个输入框，让孩子练习把需求说清楚。</p>
+          <div class="prompt-tips" aria-label="提示词公式">
+            <span>角色</span>
+            <span>任务</span>
+            <span>背景</span>
+            <span>格式</span>
+            <span>标准</span>
+          </div>
+        </div>
+
+        <div class="prompt-builder tool-panel">
+          <div class="field-row">
+            <label for="scenarioPreset">选择一个场景案例</label>
+            <select id="scenarioPreset">
+              <option value="homework">作业卡住：不要直接给答案</option>
+              <option value="english">英语口语：模拟校园导览</option>
+              <option value="poster">校园海报：生成视觉背景</option>
+              <option value="song">校园歌曲：写一版歌词</option>
+              <option value="speech">上台演讲：做 1 分钟发言</option>
+            </select>
+          </div>
+          <div class="prompt-fields">
+            <label>角色<textarea id="roleInput" rows="2"></textarea></label>
+            <label>任务<textarea id="taskInput" rows="2"></textarea></label>
+            <label>背景<textarea id="contextInput" rows="2"></textarea></label>
+            <label>格式<textarea id="formatInput" rows="2"></textarea></label>
+            <label>标准<textarea id="standardInput" rows="2"></textarea></label>
+          </div>
+          <div class="prompt-score">
+            <span>提示词清晰度</span>
+            <div class="score-track"><span id="scoreBar"></span></div>
+            <strong id="scoreText">0%</strong>
+          </div>
+          <div class="prompt-output">
+            <div class="output-head">
+              <strong>生成后的提示词</strong>
+              <button class="btn small" type="button" id="copyPromptBtn">复制</button>
+            </div>
+            <pre id="promptOutput"></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cases-section" id="cases" aria-labelledby="casesTitle">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">案例实验室</p>
+            <h2 id="casesTitle">同一个问题，换一种问法，结果就变了</h2>
+            <p class="section-lead">这些案例可以直接拿到课堂里演示。每个案例都展示“普通问法”和“更好的问法”，让孩子看见提示词质量如何影响 AI 输出。</p>
+          </div>
+        </div>
+
+        <div class="case-tabs" role="tablist" aria-label="案例分类">
+          <button type="button" role="tab" aria-selected="true" class="case-tab is-active" data-case="homework">作业</button>
+          <button type="button" role="tab" aria-selected="false" class="case-tab" data-case="english">英语</button>
+          <button type="button" role="tab" aria-selected="false" class="case-tab" data-case="poster">海报</button>
+          <button type="button" role="tab" aria-selected="false" class="case-tab" data-case="song">歌曲</button>
+        </div>
+
+        <div class="case-board" id="caseBoard"></div>
+      </div>
+    </section>
+
+    <section class="section safety-section" id="safety" aria-labelledby="safetyTitle">
+      <div class="section-inner safety-grid">
+        <div>
+          <p class="section-kicker">AI 安全小测</p>
+          <h2 id="safetyTitle">能用 AI，也要知道哪些事不能做</h2>
+          <p class="section-lead">5 道判断题覆盖隐私、作业诚信、事实核查、版权和陪伴边界。提交后会看到每题反馈。</p>
+          <div class="safety-rules">
+            <article><strong>不输入隐私</strong><span>真实姓名、住址、电话、学校详细信息、私人照片。</span></article>
+            <article><strong>不照抄答案</strong><span>AI 可以提示思路，最终理解和判断必须来自自己。</span></article>
+            <article><strong>不假装原创</strong><span>用 AI 辅助作品，要能说明分工与修改过程。</span></article>
+          </div>
+        </div>
+
+        <form class="quiz tool-panel" id="quizForm">
+          <div id="quizList"></div>
+          <div class="quiz-actions">
+            <button class="btn primary" type="submit">提交小测</button>
+            <button class="btn ghost" type="button" id="resetQuizBtn">重新作答</button>
+          </div>
+          <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section project-section" id="project" aria-labelledby="projectTitle">
+      <div class="section-inner project-grid">
+        <div>
+          <p class="section-kicker">结课项目</p>
+          <h2 id="projectTitle">每个孩子带走一套 AI 作品包</h2>
+          <p class="section-lead">课程最终不是一张证书，而是一组能被展示、复盘和讲述的作品。孩子要能说出问题、过程、AI 帮助、个人判断和最终修改。</p>
+          <img class="project-illustration" src="assets/scene-project-photo.jpg" alt="虚构学生展示 AI 创意项目的真实感照片">
+          <div class="rubric">
+            <div><strong>20</strong><span>问题真实</span></div>
+            <div><strong>20</strong><span>AI 使用合理</span></div>
+            <div><strong>20</strong><span>个人贡献清晰</span></div>
+            <div><strong>20</strong><span>作品完成度</span></div>
+            <div><strong>10</strong><span>安全版权</span></div>
+            <div><strong>10</strong><span>路演表达</span></div>
+          </div>
+        </div>
+
+        <div class="portfolio tool-panel">
+          <div class="output-head">
+            <strong>作品包清单</strong>
+            <button class="btn small" type="button" id="clearPortfolioBtn">清空</button>
+          </div>
+          <div class="portfolio-list" id="portfolioList"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="lesson-dialog" id="lessonDialog">
+    <button class="dialog-close" type="button" aria-label="关闭课程详情">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
